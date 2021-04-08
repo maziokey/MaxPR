@@ -53,7 +53,6 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'cloudinary_storage',
     'django.contrib.staticfiles',
 
     # Third-Party
@@ -193,8 +192,6 @@ cloudinary.config(
   api_key = "622357626398366", 
   api_secret = "i2AlZj6N2UR7vgDO0OjchnjjPFk" 
 )
-
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 MESSAGE_TAGS = {
     messages.DEBUG: 'alert-info',
