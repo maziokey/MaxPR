@@ -17,6 +17,10 @@ from pathlib import Path
 
 import os
 
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
+
 from django.contrib.messages import constants as messages
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
