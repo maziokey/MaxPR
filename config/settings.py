@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
 
     # Third-Party
@@ -56,6 +57,7 @@ INSTALLED_APPS = [
     'django_quill',
     'django_summernote',
     'active_link',
+    'cloudinary',
 
     # Local
     'users.apps.UsersConfig',
@@ -181,6 +183,14 @@ EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'thepalmshotels@gmail.com'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+cloudinary.config( 
+  cloud_name = "hrynv1qjo", 
+  api_key = "622357626398366", 
+  api_secret = "i2AlZj6N2UR7vgDO0OjchnjjPFk" 
+)
+
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 MESSAGE_TAGS = {
     messages.DEBUG: 'alert-info',
