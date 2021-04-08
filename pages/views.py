@@ -77,7 +77,7 @@ def basecontactView(request):
             message = "\n".join(body.values())
 
             try:
-                send_mail(subject, message, 'admin@maxprng.com', ['admin@maxprng.com'])
+                send_mail(subject, message, 'thepalmshotels@gmail.com', ['thepalmshotels@gmail.com'])
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             messages.success(request, 'Message Successfully Sent!')
