@@ -1,0 +1,159 @@
+{% extends '_base.html' %}
+
+{% load static %}
+
+{% block title %}Services - PR Reporting{% endblock title %}
+
+{% block content %}
+
+  <!-- ======= Services-Hero Section ======= -->
+  <section id="prr-hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
+        <h1>Services</h1>
+        <h2>PR Reporting.</h2>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>PR Reporting</p>
+        </div>
+
+        <div class="row content">
+
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+            <img src="{% static 'assets/img/prr1.jpg' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+            <p>
+                Our elegant, industry leading media relations platform, combines easy to use tools with exceptional analysis. The first of its kind to place an intuitive and mobile interface at the heart of its design.
+            </p>
+            <p>
+                What's a conversation? An exchange of ideas, news and information and a chance to build lasting relationships. MaxPR's Response Desk was built to provide a quick fire way of keeping track of who said what to whom so that these ideas and relationships are shared amongst the team and the work involved highlighted to senior management.
+            </p>
+            <p>
+                We work proactively to understand community perceptions, garner support from stakeholders, research points of view and ensure we manage expectations as our projects progress.
+            </p>
+            
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+      <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="row no-gutters">
+  
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="icofont-simple-smile"></i>
+                <span data-toggle="counter-up">232</span>
+                <p><strong>Happy Clients</strong></p>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="icofont-document-folder"></i>
+                <span data-toggle="counter-up">521</span>
+                <p><strong>Projects</strong></p>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="icofont-live-support"></i>
+                <span data-toggle="counter-up">1,463</span>
+                <p><strong>Hours Of Support</strong></p>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="icofont-users-alt-5"></i>
+                <span data-toggle="counter-up">15</span>
+                <p><strong>Hard Workers</strong></p>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Counts Section -->
+
+      <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+
+        <div class="container" data-aos="fade-up">
+  
+          <!-- Feature Tabs -->
+          <div class="row feture-tabs" data-aos="fade-up">
+            <div class="col-lg-6">
+              <h3>Crisis Communication Strategy</h3>
+  
+              <!-- Tabs -->
+              <ul class="nav nav-pills mb-3">
+                <li>
+                  <a class="nav-link active" data-bs-toggle="pill" href="#tab1">Reporting</a>
+                </li>
+                <li>
+                  <a class="nav-link" data-bs-toggle="pill" href="#tab2">PR Planner</a>
+                </li>
+                <li>
+                  <a class="nav-link" data-bs-toggle="pill" href="#tab3">Content Hub</a>
+                </li>
+                <li>
+                  <a class="nav-link" data-bs-toggle="pill" href="#tab4">Coverage</a>
+                </li>
+                
+              </ul><!-- End Tabs -->
+  
+              <!-- Tab Content -->
+              <div class="tab-content">
+  
+                <div class="tab-pane fade show active" id="tab1">
+                  <p>Drive team efficiency with a centralised set of tools for managing statements, enquiries and requests.
+                    Instantly access truly useful reports and data visualisation. Who's afraid of big data? Most people. Which is why we provide simple to understand reporting at the click of a button.</p>
+                </div><!-- End Tab 1 Content -->
+  
+                <div class="tab-pane fade show" id="tab2">
+                  <p>Coordinate your communication activity in our simple to use, easy to search planner. Create your grid of activities, press releases, engagements and industry events in one easy to export calendar.</p>
+                </div><!-- End Tab 2 Content -->
+  
+                <div class="tab-pane fade show" id="tab3">
+                  <p>Create compelling, media rich stories using our powerful publication and distribution tools. At MaxPR we provide you with a super-simple super-powerful content management system. With one button you can schedule and embargo content, publish to your newsroom and social media channels and distribute to tailored list of journalists and stakeholders.</p>
+                </div><!-- End Tab 3 Content -->
+                
+                <div class="tab-pane fade show" id="tab4">
+                  <p>Transform coverage by linking in all communications activity (interviews, statements, networking etc). The only thing worse than being talked about is not being talked about. With MaxPR's coverage module you can simply and effectively link activities (interviews, conversations, press releases etc) to outcomes. With our one click reporting you can provide an instant analysis of what's been working and what, well, hasn't.</p>
+                </div><!-- End Tab 4 Content -->
+  
+              </div>
+  
+            </div>
+  
+            <div class="col-lg-6">
+              <img src="{% static 'assets/img/features-2.png' %}" class="img-fluid" alt="">
+            </div>
+  
+          </div><!-- End Feature Tabs -->
+  
+        </div>
+  
+      </section><!-- End Features Section -->
+
+    <!-- Include commons -->
+    {% include "includes/commons.html" %}
+
+{% endblock content %}

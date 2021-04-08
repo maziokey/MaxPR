@@ -1,0 +1,286 @@
+{% extends '_base.html' %}
+
+{% load static %}
+
+{% load blog_tags %}
+
+{% load crispy_forms_tags %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url({% static 'assets/img/slide/banner2.png' %})">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown"><span>Understand</span></h2>
+              <p class="animate__animated animate__fadeInUp">We learn your individual needs and brand, and identify your content gaps, so we can tailor a custom-made content solutions package. The foundations for a long-term partnership are laid.</p>
+              <a href="{% url 'about' %}" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url({% static 'assets/img/slide/banner1.png' %})">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Create</h2>
+              <p class="animate__animated animate__fadeInUp">Together we create an individualized content roadmap to reach your business destination, making sure your content is communicated in the right way and seen by the right eyes.</p>
+              <a href="{% url 'about' %}" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url({% static 'assets/img/slide/banner6.png' %})">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Deliver</h2>
+              <p class="animate__animated animate__fadeInUp">Our goal is to ensure your on-brand business message connects with its target audience at a primal level, resulting in trust, loyalty and conversions.</p>
+              <a href="{% url 'about' %}" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>About Us</p>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              MaxPR is the Communications agency for brands within the digital economy
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> We Understand</li>
+              <li><i class="ri-check-double-line"></i> We Create</li>
+              <li><i class="ri-check-double-line"></i> We Deliver</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              We create content by locals for locals, and we offer large-scale, multilingual content solutions at a speed that sets us apart.
+            </p>
+            <a href="{% url 'contact' %}" class="btn-learn-more">Let's Talk</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="icofont-simple-smile"></i>
+              <span data-toggle="counter-up">232</span>
+              <p><strong>Happy Clients</strong></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="icofont-document-folder"></i>
+              <span data-toggle="counter-up">521</span>
+              <p><strong>Projects</strong></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="icofont-live-support"></i>
+              <span data-toggle="counter-up">1,463</span>
+              <p><strong>Hours Of Support</strong></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="icofont-users-alt-5"></i>
+              <span data-toggle="counter-up">15</span>
+              <p><strong>Hard Workers</strong></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-5 align-items-stretch video-box" style="background-image: url({% static 'assets/img/tall2.jpg' %});" data-aos="zoom-in" data-aos-delay="100">
+            <a href="#" class="venobox mb-4" data-vbtype="video" data-autoplay="true"></a>
+          </div>
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+            <div class="content">
+              <h3><strong>Our Process</strong></h3>
+              <p>
+                We are not like every other PR agency. We are not about spin, but about communicating your truth in a way that generates long-term trust with your target audiences.
+              </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>01</span> Understand <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
+                    <p>
+                      We learn your individual needs and brand, and identify your content gaps, so we can tailor a custom-made content solutions package. The foundations for a long-term partnership are laid.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>02</span> Create <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
+                    <p>
+                      Together we create an individualized content roadmap to reach your business destination, making sure your content is communicated in the right way and seen by the right eyes.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>03</span> Deliver <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
+                    <p>
+                      Our goal is to ensure your on-brand business message connects with its target audience at a primal level, resulting in trust, loyalty and conversions.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>What We Do</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-drupal"></i></div>
+              <h4><a href="{% url 'brandmgt' %}">Brand Management</a></h4>
+              <p>Creating compelling PR and content marketing campaigns with well thought out communications strategy and effective brand messaging.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tv"></i></div>
+              <h4><a href="{% url 'mediarelations' %}">Media Relations</a></h4>
+              <p>We’re passionate about PR and how it enhances reputations, creating understanding with your target audiences.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4><a href="{% url 'influencermarketing' %}">Influencer Marketing</a></h4>
+              <p>Ensuring your message reaches your target audience, by getting you in front of the right movers and shakers in the media, analyst and influencer landscape.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-dollar-circle"></i></div>
+              <h4><a href="{% url 'stakeholderrelations' %}">Stakeholder Relations</a></h4>
+              <p>Effective management of relationships with stakeholders is crucial to resolving issues facing organizations.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-chart"></i></div>
+              <h4><a href="{% url 'consumer' %}">Consumer & Audience Insights</a></h4>
+              <p>In times of planning or crisis, pull on the big moments going back in time, and give your decision makers the context they need to make a call, right now.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxs-report"></i></div>
+              <h4><a href="{% url 'prreporting' %}">PR Reporting</a></h4>
+              <p>Good PR isn’t always about gaining media coverage: it’s about reaching the right people. We’ll do this in the most effective way.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!--======== BBlog Section ========-->
+    <section id="bblog" class="bblog">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Blog</h2>
+          <p>Insights</p>
+        </div>
+  
+        <div class="row">
+         
+          {% index_recent_posts 3 %}
+  
+        </div>
+  
+      </div>
+    </section><!-- End BBlog Section -->
+
+    <!-- Include commons -->
+    {% include "includes/commons.html" %}
+
+{% endblock content %}

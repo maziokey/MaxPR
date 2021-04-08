@@ -1,0 +1,266 @@
+{% extends '_base.html' %}
+
+{% load static %}
+
+{% block title %}Our Services{% endblock title %}
+
+{% block content %}
+
+  <!-- ======= Services-Hero Section ======= -->
+  <section id="services-hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
+        <h1>Our Services</h1>
+        <h2>Understand Create Deliver.</h2>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>What We Do For Our Clients</p>
+        </div>
+
+        <div class="row content">
+
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+            <img src="{% static 'assets/img/services2.jpg' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+            <p>
+                At MaxPR, we know one size doesn’t fit all, which is why we offer a complete continuum of PR and Marketing services, from brand management and media relations to stakeholder relations and crisis management.
+            </p>
+            <p>
+                We work with our clients to identify the right marketing mix to meet their objectives. The media-neutral nature of our agency allows us to provide fully integrated marketing communications, utilising every marketing technique and discipline available to us to exceed our clients' expectations.
+            </p>
+            <p>
+                Whether you need to develop or revitalise a brand, reach out to your customers, develop your distribution channels, raise awareness of your brand or products, increase sales lead generation, launch a showroom, develop your digital presence or engage your employees... we have the expertise to support your objectives.
+            </p>
+            <p>
+                For more information about our services, please select the service you are interested in below.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon-box">
+                <div class="icon"><i class="bx bxs-video-recording"></i></div>
+                <h4><a href="{% url 'prcomm' %}">PR & Communication</a></h4>
+                <p>Creating compelling PR and content marketing campaigns with well thought out communications strategy and effective brand messaging.</p>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon-box">
+                <div class="icon"><i class="bx bxs-megaphone"></i></div>
+                <h4><a href="{% url 'marketing' %}">Marketing</a></h4>
+                <p>We’re passionate about PR and how it enhances reputations, creating understanding with your target audiences.</p>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-tachometer"></i></div>
+                <h4><a href="{% url 'influencermarketing' %}">Influencer Marketing</a></h4>
+                <p>Ensuring your message reaches your target audience, by getting you in front of the right movers and shakers in the media, analyst and influencer landscape.</p>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-dollar-circle"></i></div>
+                <h4><a href="{% url 'stakeholderrelations' %}">Stakeholder Relations</a></h4>
+                <p>Effective management of relationships with stakeholders is crucial to resolving issues facing organizations.</p>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-chart"></i></div>
+                <h4><a href="{% url 'consumer' %}">Consumer & Audience Insights</a></h4>
+                <p>In times of planning or crisis, pull on the big moments going back in time, and give your decision makers the context they need to make a call, right now.</p>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+              <div class="icon-box">
+                <div class="icon"><i class="bx bxs-report"></i></div>
+                <h4><a href="{% url 'prreporting' %}">PR Reporting</a></h4>
+                <p>Good PR isn’t always about gaining media coverage: it’s about reaching the right people. We’ll do this in the most effective way.</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bxs-microphone"></i></div>
+                  <h4><a href="{% url 'sociallistening' %}">Social Listening</a></h4>
+                  <p>Good PR isn’t always about gaining media coverage: it’s about reaching the right people. We’ll do this in the most effective way.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bxl-instagram"></i></div>
+                  <h4><a href="{% url 'socialmedia' %}">Social Media Management</a></h4>
+                  <p>In times of planning or crisis, pull on the big moments going back in time, and give your decision makers the context they need to make a call, right now.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bxs-award"></i></div>
+                  <h4><a href="{% url 'repmanagement' %}">Reputation Management</a></h4>
+                  <p>In times of planning or crisis, pull on the big moments going back in time, and give your decision makers the context they need to make a call, right now.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bxs-meteor"></i></div>
+                  <h4><a href="{% url 'crisiscomm' %}">Crisis Communication</a></h4>
+                  <p>Effective management of relationships with stakeholders is crucial to resolving issues facing organizations.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bx-tv"></i></div>
+                  <h4><a href="{% url 'mediarelations' %}">Media Relations</a></h4>
+                  <p>Effective management of relationships with stakeholders is crucial to resolving issues facing organizations.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon-box">
+                  <div class="icon"><i class="bx bxl-drupal"></i></div>
+                  <h4><a href="{% url 'brandmgt' %}">Brand Management</a></h4>
+                  <p>Effective management of relationships with stakeholders is crucial to resolving issues facing organizations.</p>
+                </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Services Section -->
+
+      <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="row no-gutters">
+  
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="icofont-simple-smile"></i>
+                <span data-toggle="counter-up">232</span>
+                <p><strong>Happy Clients</strong></p>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="icofont-document-folder"></i>
+                <span data-toggle="counter-up">521</span>
+                <p><strong>Projects</strong></p>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="icofont-live-support"></i>
+                <span data-toggle="counter-up">1,463</span>
+                <p><strong>Hours Of Support</strong></p>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="icofont-users-alt-5"></i>
+                <span data-toggle="counter-up">15</span>
+                <p><strong>Hard Workers</strong></p>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Counts Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-5 align-items-stretch video-box" style="background-image: url({% static 'assets/img/tall4.jpg' %});" data-aos="zoom-in" data-aos-delay="100">
+            <a href="#" class="venobox mb-4" data-vbtype="video" data-autoplay="true"></a>
+          </div>
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+            <div class="content">
+              <h3><strong>What Makes us Unique</strong></h3>
+              <p>
+                We are not like every other PR agency. We are not about spin, but about communicating your truth in a way that generates long-term trust with your target audiences.
+              </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-toggle="collapse" class="collapse" href="#accordion-list-1"><span>01</span> Driven By Results <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
+                    <p>
+                        Our measurement framework is at the heart of every PR campaign. We work collaboratively with clients to define measurable outputs and outcomes at the start of an engagement. This isn’t just media results, its share of voice, message delivery and business outcomes.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#accordion-list-2" class="collapsed"><span>02</span> Creativity at the Core <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
+                    <p>
+                        Not only are we a creative bunch of people, we love seeing it come through in the PR campaigns we deliver. From brand storytelling, visualisations, video and smart pitches, we ensure the creative elements shine through.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-toggle="collapse" href="#accordion-list-3" class="collapsed"><span>03</span> Solutions That Engage <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
+                    <p>
+                        We pride ourselves on digging deep into our client’s target audience to ensure we are engaging the right people, in the right place, with the right content to deliver the business results that matter to them.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    
+
+    <!-- Include commons -->
+    {% include "includes/commons.html" %}
+
+{% endblock content %}

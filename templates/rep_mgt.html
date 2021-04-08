@@ -1,0 +1,156 @@
+{% extends '_base.html' %}
+
+{% load static %}
+
+{% block title %}Services - Reputation Management{% endblock title %}
+
+{% block content %}
+
+  <!-- ======= Services-Hero Section ======= -->
+  <section id="rep-hero" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
+        <h1>Services</h1>
+        <h2>Reputation Management.</h2>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Reputation Management</p>
+        </div>
+
+        <div class="row content">
+
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+            <img src="{% static 'assets/img/rep2.jpg' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+            <p>
+                It is challenging to successfully manage a reputation online – particularly in times of crisis. Traditionally, a bit of negative press in a local or national paper would quickly become tomorrow’s chip shop paper. But these days bad publicity online can soon become one one the biggest influences on your organisation’s reputation.
+            </p>
+            <p>
+                While many companies or individuals may deserve the public scrutiny that comes with behaving badly or letting people down, others may feel they have been harshly treated and that a bad online reputation that lasts forever is simply unfair.
+            </p>
+            <p>
+                We can help to improve the online profile of individuals and companies. Find out more by contacting us today.
+            </p>
+            
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+      <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="row no-gutters">
+  
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="icofont-simple-smile"></i>
+                <span data-toggle="counter-up">232</span>
+                <p><strong>Happy Clients</strong></p>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="icofont-document-folder"></i>
+                <span data-toggle="counter-up">521</span>
+                <p><strong>Projects</strong></p>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="icofont-live-support"></i>
+                <span data-toggle="counter-up">1,463</span>
+                <p><strong>Hours Of Support</strong></p>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+              <div class="count-box">
+                <i class="icofont-users-alt-5"></i>
+                <span data-toggle="counter-up">15</span>
+                <p><strong>Hard Workers</strong></p>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Counts Section -->
+
+      <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+
+        <div class="container" data-aos="fade-up">
+  
+          <!-- Feature Tabs -->
+          <div class="row feture-tabs" data-aos="fade-up">
+            <div class="col-lg-6">
+              <h3>Reputation Management Services</h3>
+  
+              <!-- Tabs -->
+              <ul class="nav nav-pills mb-3">
+                <li>
+                  <a class="nav-link active" data-bs-toggle="pill" href="#tab1">Issues management</a>
+                </li>
+                <li>
+                  <a class="nav-link" data-bs-toggle="pill" href="#tab2">Diagnostic Reviews</a>
+                </li>
+                <li>
+                  <a class="nav-link" data-bs-toggle="pill" href="#tab3">Reputation Audit</a>
+                </li>
+                
+              </ul><!-- End Tabs -->
+  
+              <!-- Tab Content -->
+              <div class="tab-content">
+  
+                <div class="tab-pane fade show active" id="tab1">
+                  <p>Complex issues arising from litigation, whistleblowing or regulatory failures can place great demands on an organisation’s management. Problems need to be identified and put right, stakeholders handled with care, and communications plans made for all scenarios.</p>
+                  <p>We help leaders protect their reputations and retain a sense of control during these periods of uncertainty by giving a combination of communication and management advice specifically tailored to the individual situation.</p>
+                 
+                </div><!-- End Tab 1 Content -->
+  
+                <div class="tab-pane fade show" id="tab2">
+                  <p>A diagnostic review will consider how well the organisation functions from a communications perspective by conducting interviews with key people and making recommendations based on best practice elsewhere and our years of experience advising organisations of all type and size.</p>
+                </div><!-- End Tab 2 Content -->
+  
+                <div class="tab-pane fade show" id="tab3">
+                  <p>Reputation is one of most valuable long term assets a business has. Your reputation is simply what other people think about you, and a discreet high-level audit will inform your overall public relations strategy, protect your reputation, and help you build positive new relationships.</p>
+                  <p>Our consultants have a broad network of contacts among key opinion formers in the media, politics and civil society.  Working with you, we will identify a list of people whose opinion of your organisation really matters.  We will then conduct a series of private meetings and quantitative research to build up a 360-degree picture of your organisation’s reputation.</p>
+                </div><!-- End Tab 3 Content -->
+  
+              </div>
+  
+            </div>
+  
+            <div class="col-lg-6">
+              <img src="{% static 'assets/img/rep3.png' %}" class="img-fluid" alt="">
+            </div>
+  
+          </div><!-- End Feature Tabs -->
+  
+        </div>
+  
+      </section><!-- End Features Section -->
+
+    
+
+    <!-- Include commons -->
+    {% include "includes/commons.html" %}
+
+{% endblock content %}

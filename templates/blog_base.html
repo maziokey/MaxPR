@@ -1,0 +1,197 @@
+{% load static %}
+
+{% load crispy_forms_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>{% block title %}MaxPR{% endblock title %}</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Multi - v2.2.1
+  * Template URL: https://bootstrapmade.com/multi-responsive-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <!-- <h1 class="logo mr-auto"><a href="{% url 'home' %}">MaxPR</a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="{% url 'home' %}" class="logo mr-auto"><img src="{% static 'assets/img/maxpr002.png' %}" alt="" class="img-fluid"></a>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'services' %}">Services</a></li>
+          <li class="drop-down"><a href="{% url 'marketing' %}">Marketing</a>
+            <ul>
+              <li><a href="{% url 'brandmgt' %}">Brand Management</a></li>
+              <li><a href="{% url 'sociallistening' %}">Social Listening</a></li>
+              <li><a href="{% url 'socialmedia' %}">Social Media Management</a></li>
+              <li><a href="{% url 'influencermarketing' %}">Influencer Marketing</a></li>
+              <li><a href="{% url 'consumer' %}">Consumer & Audience Insights</a></li>
+            </ul>
+          </li>
+          <li class="drop-down"><a href="{% url 'prcomm' %}">PR & Communication</a>
+            <ul>
+              <li><a href="{% url 'repmanagement' %}">Reputation Management</a></li>
+              <li><a href="{% url 'mediarelations' %}">Media Relations</a></li>
+              <li><a href="{% url 'stakeholderrelations' %}">Stakeholder Relations</a></li>
+              <li><a href="{% url 'crisiscomm' %}">Crisis Communications</a></li>
+              <li><a href="{% url 'prreporting' %}">PR Reporting</a></li>
+            </ul>
+          </li>
+          <li><a href="{% url 'blog:post_list' %}">Blog</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <a href="{% url 'contact' %}" class="get-started-btn">Let's Talk</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  {% block content %}
+  {% endblock content %}  
+
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <a href="{% url 'home' %}" class="logo mr-auto"><img src="{% static 'assets/img/maxpr002.png' %}" alt="" class="img-fluid"></a>
+              <p>
+                43 Yaounde Street, Zone 6 <br>
+                Wuse, Abuja<br><br>
+                <strong>Phone:</strong> +234 5589 55488 55<br>
+                <strong>Email:</strong> info@maxprng.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'home' %}">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'about' %}">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'blog:post_list' %}">Blog</a></li>
+            {% if user.is_authenticated %}
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'logout' %}">Log Out</a></li>
+            {% else %}
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'login' %}">Log In</a></li>
+            {% endif %}
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'marketing' %}">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'prcomm' %}">PR & Communication</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'brandmgt' %}">Brand Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'mediarelations' %}">Media Relations</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="{% url 'prreporting' %}">PR Reporting</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>About MaxPR</h4>
+            <p>
+              MaxPR is a leading marketing, digital and PR agency, offering a complete range of award-winning 
+              marketing services, including brand development, strategic thinking, tactical marketing campaigns, 
+              digital communications, PR and design. 
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>MaxPR</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/multi-responsive-bootstrap-template/ -->
+        Designed by <a href="#">Maxilabs</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap5.bundle.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

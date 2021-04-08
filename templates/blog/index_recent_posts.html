@@ -1,0 +1,29 @@
+
+       {% for post in latest_posts %}
+        <div class="col-lg-4  col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+          <article class="entry">
+
+            <div class="entry-img">
+              <img src="{{ post.banner.url }}" alt="" class="img-fluid">
+            </div>
+
+            <h2 class="entry-title">
+              <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+            </h2>
+
+            <div class="entry-meta">
+              <ul>
+                <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="{{ post.get_absolute_url }}">{{ post.author }}</a></li>
+                <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <time><a href="{{ post.get_absolute_url }}">{{ post.publish | date:"F d, Y" }}</a></time></li>
+              </ul>
+            </div>
+
+            <div class="entry-content">
+              <div class="read-more">
+                <a href="{{ post.get_absolute_url }}">Read More</a>
+              </div>
+            </div>
+
+          </article><!-- End blog entry -->
+        </div>
+       {% endfor %}
