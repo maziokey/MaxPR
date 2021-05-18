@@ -13,7 +13,7 @@
 
             <div class="entry-meta">
               <ul>
-                <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="{{ post.get_absolute_url }}">{{ post.author }}</a></li>
+                <li class="d-flex align-items-center"><i class="icofont-user"></i> <a href="{{ post.get_absolute_url }}">{{ post.author.first_name }} {{ post.author.last_name }}</a></li>
                 <li class="d-flex align-items-center"><i class="icofont-wall-clock"></i> <time><a href="{{ post.get_absolute_url }}">{{ post.publish | date:"F d, Y" }}</a></time></li>
               </ul>
             </div>

@@ -45,7 +45,7 @@
   
               <div class="entry-meta">
                 <ul>
-                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">{{ post.author }}</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="#">{{ post.author.first_name }} {{ post.author.last_name }}</a></li>
                   <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#">{{ post.publish }}</a></li>
                   <li class="d-flex align-items-center">
                     {% with post.comments.count as total_comments %}

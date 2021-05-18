@@ -1,9 +1,7 @@
-change slider images
-change services icons on homepage
-change testimonial images
 once deployed, enter 3 proper blog post
 change team images and update sm links on homepage
-change services icons on services page
-change services icons on marketing page
-change services icons on pr and comms page
-change video or image of pr strategy on pr & comms page
+
+needs
+social media accounts available - facebook, twitter, instagram, skype, linkedin
+images of team members with their social media accounts
+at least 3 blog posts that i'll add to the website
