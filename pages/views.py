@@ -55,6 +55,9 @@ class PRreportingPageView(TemplateView):
 class ContactPageView(TemplateView):
     template_name = 'contact.html' 
 
+class ComingSoonPageView(TemplateView):
+    template_name = 'coming_soon.html' 
+
 
 def inject_form(request):
     return {'form': ContactForm()}
